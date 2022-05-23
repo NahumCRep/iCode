@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fredoka:wght@300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primaryColor: #F6F6F6;
+    --secondaryColor: #212121;
+    --thirdColor: #007880;
+    --fourthColor: #C4DDFF;
+    --primaryFont: 'Bebas Neue', cursive;
+    --secondaryFont: 'Fredoka', sans-serif;
+}
+
+body {
+    background-color: var(--primaryColor);
+}
+
+
+#header {
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+}
+
+main {
+    margin-top: 4rem;
+}
+
+/* ---------------------------- */
+/* ---------------------------- */
+/* -->>> NAVBAR */
+
+.navbar {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    position: fixed;
+    background-color: var(--primaryColor);
+}
+
+.navbar__shadow{
+    box-shadow: 0 1px 20px var(--secondaryColor);
+}
+
+.navbar__logo {
+    width: auto;
+    height: 90%;
+}
+
+.navbar__links_container {
+    background-color: var(--secondaryColor);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 0px;
+    overflow: hidden;
+    transition: height 0.5s ease-in-out;
+}
+
+.navbar__menu_open {
+    height: 200px;
+}
+
+.navbar__links_list {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+    font-family: var(--secondaryFont);
+}
+
+.navbar__links_list li {
+    width: 100%;
+    flex-grow: 1;
+}
+
+.nav-link {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    color: var(--primaryColor);
+    font-size: 1.2rem;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar__burguer {
+    width: 50px;
+    height: 50px;
+    background-color: blueviolet;
+}
+
+/* -->>> END NAVBAR */
+/* ---------------------------- */
+/* ---------------------------- */
+
+
+/* ---------------------------- */
+/* ---------------------------- */
+/* -->>> HEADER CONTENT */
+.header__content {
+    display: flex;
+    flex-direction: column;
+    padding: 80px 2rem 0 2rem;
+}
+
+.header__img_container {
+    width: 100%;
+    height: 300px;
+    padding: 1rem 0;
+    background-color: var(--thirdColor);
+    border-bottom-right-radius: 50%;
+}
+
+#header-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.header__info {
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.header__info h1 {
+    font-family: var(--primaryFont);
+    font-size: clamp(2rem, 5vw, 4rem);
+}
+
+.header__info p {
+    font-family: var(--secondaryFont);
+}
+
+.header__info_subtitle {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-family: var(--secondaryFont);
+}
+
+.header__info_subtitle h3 {
+    font-size: 1.2rem;
+}
+
+.header__info_subtitle span {
+    font-size: clamp(1.6rem, 2.5vw, 1.8rem);
+    ;
+    font-weight: bold;
+    color: var(--thirdColor);
+    margin-left: 2.5rem;
+}
+
+.header__info_btn {
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    background-color: var(--thirdColor);
+    color: var(--primaryColor);
+    margin-top: 20px;
+    border-radius: 10px;
+    font-family: var(--secondaryFont);
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+
+/* -->>> END HEADER CONTENT */
+/* ---------------------------- */
+/* ---------------------------- */
+
+
+/* ---------------------------- */
+/* ---------------------------- */
+/* -->>> SECTION ABOUT */
+
+.section__about {
+    width: 100%;
+    height: 600px;
+    background-color: var(--fourthColor);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 3rem 0;
+    border-top: 10px dashed var(--primaryColor);
+    border-bottom: 10px dashed var(--primaryColor);
+}
+
+.about__info{
+    width: 100%;
+    padding: 0 2rem;
+    color: var(--secondaryColor);
+}
+
+.about__info h1{
+    font-family: var(--primaryFont);
+    font-size: 2.2rem;
+}
+
+.about__info p{
+    font-family: var(--secondaryFont);
+    text-align: justify;
+}
+
+.about__video_container{
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+}   
+
+.video__element{
+    width: 100%;
+    height: 100%;
+}
+
+/* -->>> SECTION ABOUT */
+/* ---------------------------- */
+/* ---------------------------- */
+
+@media screen and (min-width: 650px) {
+
+    #header {
+        height: 80vh;
+    }
+
+    /* ---------------------------- */
+    /* -->>> NAVBAR */
+    .navbar {
+        padding: 0 5rem;
+        /* border-bottom: 5px solid var(--thirdColor); */
+        /* box-shadow: 0 1px 50px var(--secondaryColor); */
+    }
+
+    .navbar__links_container {
+        position: relative;
+        top: 0;
+        width: auto;
+        height: auto;
+        background: none;
+    }
+
+    .navbar__links_list {
+        height: auto;
+        flex-direction: row;
+        gap: 3rem;
+    }
+
+    .nav-link {
+        color: var(--secondaryColor);
+        position: relative;
+    }
+
+    .nav-link::after {
+        content: '';
+        width: 0;
+        height: 2px;
+        background-color: var(--thirdColor);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .nav-link:hover {
+        color: var(--thirdColor);
+    }
+
+    .nav-link:hover::after {
+        width: 100%;
+    }
+
+    .navbar__burguer {
+        display: none;
+    }
+
+    /* -->>> END NAVBAR */
+    /* ---------------------------- */
+
+
+    /* ---------------------------- */
+    /* -->>> HEADER CONTENT */
+    .header__content {
+        flex-direction: row-reverse;
+        padding: 80px 5rem 0 5rem;
+        gap: 2rem;
+    }
+
+    .header__img_container {
+        width: 50%;
+        height: 550px;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 50%;
+    }
+
+    .header__info {
+        width: 50%;
+        align-items: flex-start;
+    }
+
+    .header__info_subtitle {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .header__info_subtitle h3 {
+        font-size: 1.2rem;
+        padding-top: 5px;
+    }
+
+    .header__info_subtitle span {
+        margin-left: 0;
+    }
+
+    .header__info_btn {
+        width: 250px;
+        height: 70px;
+        margin-top: 2rem;
+        float: left;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .header__info_btn:hover {
+        background-color: #0AA1DD;
+    }
+
+    /* -->>> END HEADER CONTENT */
+    /* ---------------------------- */
+
+    /* ---------------------------- */
+    /* -->>> SECTION ABOUT */
+
+    .section__about {
+        flex-direction: row;
+        height: 500px;
+        padding: 0;
+        /* flex-wrap: wrap; */
+    }
+
+    .about__info{
+        width: 40%;
+        min-width: 200px;
+        padding-left: 5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .about__video_container{
+        width: 60%;
+        height: 100%;
+    }   
+
+
+    /* -->>> SECTION ABOUT */
+    /* ---------------------------- */
+    /* ---------------------------- */
+}
