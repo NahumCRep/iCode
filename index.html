@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +8,10 @@
     <link rel="stylesheet" type="text/css" href="./style.css">
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://kit.fontawesome.com/fab9be11b9.js" crossorigin="anonymous"></script>
     <title>ICode</title>
 </head>
+
 <body>
     <header id="header">
         <nav id="nav-bar" class="navbar">
@@ -16,7 +19,7 @@
             <div id="navmenu" class="navbar__links_container">
                 <ul class="navbar__links_list">
                     <li><a class="nav-link" href="#about">About</a></li>
-                    <li><a class="nav-link" href="#">Courses</a></li>
+                    <li><a class="nav-link" href="#courses">Courses</a></li>
                     <li><a class="nav-link" href="#">Pricing</a></li>
                 </ul>
             </div>
@@ -28,13 +31,14 @@
             </div>
             <div class="header__info">
                 <h1>Passionate About Programming ?</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut rhoncus leo, id ullamcorper lorem. Fusce nec bibendum mauris. Sed sodales interdum nibh non lacinia. </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut rhoncus leo, id ullamcorper lorem.
+                    Fusce nec bibendum mauris. Sed sodales interdum nibh non lacinia. </p>
                 <div class="header__info_subtitle">
                     <h3>with iCode</h3>
                     <span class="typed-0"></span>
                 </div>
                 <button class="header__info_btn">Join Now</button>
-            </div>  
+            </div>
         </div>
     </header>
 
@@ -42,21 +46,105 @@
         <section id="about" class="section__about">
             <article class="about__info">
                 <h1>What is iCode ?</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim mattis odio, eget tempor ante posuere sed. Curabitur eget dictum diam, sed faucibus sem. In hac habitasse platea dictumst. Suspendisse hendrerit sed risus non posuere. Vestibulum at vehicula erat. In hac habitasse platea dictumst. Nam arcu ante, blandit ut maximus vel, porttitor sit amet turpis. Pellentesque nunc augue, luctus sit amet urna vitae, efficitur varius dolor.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim mattis odio, eget tempor
+                    ante posuere sed. Curabitur eget dictum diam, sed faucibus sem. In hac habitasse platea dictumst.
+                    Suspendisse hendrerit sed risus non posuere. Vestibulum at vehicula erat. In hac habitasse platea
+                    dictumst. Nam arcu ante, blandit ut maximus vel, porttitor sit amet turpis. Pellentesque nunc augue,
+                    luctus sit amet urna vitae, efficitur varius dolor.</p>
             </article>
-            <div class="about__video_container">
-                <video id="video" class="video__element" autoplay muted loop>
+            <aside class="about__video_container">
+                <video id="video" class="video__element" title="Vídeo de Pavel Danilyuk en Pexels" autoplay muted loop>
                     <!-- Vídeo de Pavel Danilyuk en Pexels -->
                     <!-- https://www.pexels.com/es-es/video/manos-ordenador-portatil-macbook-pro-internet-5495845/ -->
-                    <source  src="/assets/video/coding.mp4" type="video/mp4"> 
+                    <source src="/assets/video/coding.mp4" type="video/mp4">
                 </video>
-            </div>
-            
+            </aside>
         </section>
-    
+
+        <section id="courses" class="section__courses">
+            <div class="courses__info">
+                <h1>A lot of interesting courses</h1>
+                <h3>Find what you want</h3>
+            </div>
+
+            <div class="courses__slider_container">
+                <div id="slider" class="courses__slider">
+                    <article class="course__card">
+                        <figure class="course__card_figure">
+                            <img src="/assets/course.jpg" alt="course banner - Foto de RealToughCandy.com en Pexels" />
+                        </figure>
+                        <div class="course__card_title_div">
+                            <h2 class="course__card_title">Course Title</h2>
+                        </div>
+                    </article>
+                    <!-- ................................... -->
+                    <article class="course__card">
+                        <figure class="course__card_figure">
+                            <img src="/assets/course.jpg" alt="course banner - Foto de RealToughCandy.com en Pexels" />
+                        </figure>
+                        <div class="course__card_title_div">
+                            <h2 class="course__card_title">Course Title</h2>
+                        </div>
+                    </article>
+                    <!-- ................................... -->
+                    <article class="course__card">
+                        <figure class="course__card_figure">
+                            <img src="/assets/course.jpg" alt="course banner - Foto de RealToughCandy.com en Pexels" />
+                        </figure>
+                        <div class="course__card_title_div">
+                            <h2 class="course__card_title">Course Title</h2>
+                        </div>
+                    </article>
+                    <!-- ................................... -->
+                    <article class="course__card">
+                        <figure class="course__card_figure">
+                            <img src="/assets/course.jpg" alt="course banner - Foto de RealToughCandy.com en Pexels" />
+                        </figure>
+                        <div class="course__card_title_div">
+                            <h2 class="course__card_title">Course Title</h2>
+                        </div>
+                    </article>
+                    <!-- ................................... -->
+                    <article class="course__card">
+                        <figure class="course__card_figure">
+                            <img src="/assets/course.jpg" alt="course banner - Foto de RealToughCandy.com en Pexels" />
+                        </figure>
+                        <div class="course__card_title_div">
+                            <h2 class="course__card_title">Course Title</h2>
+                        </div>
+                    </article>
+                    <!-- ................................... -->
+                    <article class="course__card">
+                        <figure class="course__card_figure">
+                            <img src="/assets/course.jpg" alt="course banner - Foto de RealToughCandy.com en Pexels" />
+                        </figure>
+                        <div class="course__card_title_div">
+                            <h2 class="course__card_title">Course Title</h2>
+                        </div>
+                    </article>
+                    <!-- ................................... -->
+                    <article class="course__card">
+                        <figure class="course__card_figure">
+                            <img src="/assets/course.jpg" alt="course banner - Foto de RealToughCandy.com en Pexels" />
+                        </figure>
+                        <div class="course__card_title_div">
+                            <h2 class="course__card_title">Course Title</h2>
+                        </div>
+                    </article>
+                </div>
+                <!-- slider buttons -->
+                <div class="slider__btns">
+                    <button id="sliderLeft"><i class="fa-solid fa-angle-left"></i></button>
+                    <button id="sliderRight"><i class="fa-solid fa-angle-right"></i></button>
+                </div>
+                <!-- -------------- -->
+            </div>
+        </section>
+
     </main>
 
-   
+
     <script src="/script.js"></script>
 </body>
+
 </html>
