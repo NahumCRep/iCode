@@ -32,3 +32,17 @@ const typed = new Typed('.typed-0', {
     showCursor: false
 });
 
+// Courses Slider
+const slider = document.getElementById('slider')
+const leftBtn = document.getElementById('sliderLeft')
+const rightBtn = document.getElementById('sliderRight')
+
+leftBtn.addEventListener('click', () => {
+    slider.scrollLeft -= (slider.children[0].offsetWidth + 10)
+})
+
+rightBtn.addEventListener('click', () =>  {
+    slider.scrollLeft += (slider.children[0].offsetWidth + 10)
+})
+
+
