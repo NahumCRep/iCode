@@ -21,10 +21,14 @@
                     <li><a class="nav-link" href="#about">About</a></li>
                     <li><a class="nav-link" href="#courses">Courses</a></li>
                     <li><a class="nav-link" href="#pricing">Pricing</a></li>
-                    <li><a class="nav-link" href="#">Join</a></li>
+                    <li><a class="nav-link" href="#join">Join</a></li>
                 </ul>
             </div>
-            <div id="burguer" class="navbar__burguer"></div>
+            <div id="burguer" class="navbar__burguer">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
         <div class="header__content">
             <div class="header__img_container">
@@ -151,9 +155,9 @@
                     <p class="plan__free_price"><sup>$</sup>0<small>/ month</small></p>
                     <div class="plan__characteristics_div">
                         <ul class="characteristics__list">
-                            <li>Integer suscipit nisl <i class="fa-solid fa-check characteristic__green"></i></li> 
-                            <li>Nam in purus <i class="fa-solid fa-check characteristic__green"></i></li> 
-                            <li>In dignissim magna <i class="fa-solid fa-check characteristic__green"></i></li> 
+                            <li>Integer suscipit nisl <i class="fa-solid fa-check characteristic__green"></i></li>
+                            <li>Nam in purus <i class="fa-solid fa-check characteristic__green"></i></li>
+                            <li>In dignissim magna <i class="fa-solid fa-check characteristic__green"></i></li>
                             <li>Ut commodo justo sed <i class="fa-solid fa-xmark characteristic__red"></i></li>
                             <li>Quisque nec erat ornare <i class="fa-solid fa-xmark characteristic__red"></i></li>
                             <li>Ut commodo justo sed eros <i class="fa-solid fa-xmark characteristic__red"></i></li>
@@ -167,9 +171,9 @@
                     <p class="plan__free_price"><sup>$</sup>10<small>/ month</small></p>
                     <div class="plan__characteristics_div">
                         <ul class="characteristics__list">
-                            <li>Integer suscipit nisl <i class="fa-solid fa-check characteristic__green"></i></li> 
-                            <li>Nam in purus <i class="fa-solid fa-check characteristic__green"></i></li> 
-                            <li>In dignissim magna <i class="fa-solid fa-check characteristic__green"></i></li> 
+                            <li>Integer suscipit nisl <i class="fa-solid fa-check characteristic__green"></i></li>
+                            <li>Nam in purus <i class="fa-solid fa-check characteristic__green"></i></li>
+                            <li>In dignissim magna <i class="fa-solid fa-check characteristic__green"></i></li>
                             <li>Ut commodo justo sed <i class="fa-solid fa-check characteristic__green"></i></li>
                             <li>Quisque nec erat ornare <i class="fa-solid fa-xmark characteristic__red"></i></li>
                             <li>Ut commodo justo sed eros <i class="fa-solid fa-xmark characteristic__red"></i></li>
@@ -183,9 +187,9 @@
                     <p class="plan__free_price"><sup>$</sup>30<small>/ month</small></p>
                     <div class="plan__characteristics_div">
                         <ul class="characteristics__list">
-                            <li>Integer suscipit nisl <i class="fa-solid fa-check characteristic__green"></i></li> 
-                            <li>Nam in purus <i class="fa-solid fa-check characteristic__green"></i></li> 
-                            <li>In dignissim magna <i class="fa-solid fa-check characteristic__green"></i></li> 
+                            <li>Integer suscipit nisl <i class="fa-solid fa-check characteristic__green"></i></li>
+                            <li>Nam in purus <i class="fa-solid fa-check characteristic__green"></i></li>
+                            <li>In dignissim magna <i class="fa-solid fa-check characteristic__green"></i></li>
                             <li>Ut commodo justo sed <i class="fa-solid fa-check characteristic__green"></i></li>
                             <li>Quisque nec erat ornare <i class="fa-solid fa-check characteristic__green"></i></li>
                             <li>Ut commodo justo sed eros <i class="fa-solid fa-check characteristic__green"></i></li>
@@ -196,19 +200,29 @@
             </div>
         </section>
         <!-- Join Section -->
-        <section class="section__join">
-            <div class="join__info">
-                <h1>Dont think twice !!</h1>
-                <h3>Join and start learning</h3>
+        <section id="join" class="section__join">
+            <div class="join__img_container">
                 <img src="/assets/join.svg" alt="developer activity svg unDraw" />
             </div>
             <div class="join__form_container">
-                <form>
-
+                <h1 class="join__title">Dont think twice !!</h1>
+                <h3 class="join__subtitle">Join and start learning</h3>
+                <form id="form" class="join__form" action="https://www.freecodecamp.com/email-submit">
+                    <input id="email" type="email" placeholder="email" />
+                    <button id="submit" type="submit">Send</button>
                 </form>
             </div>
         </section>
     </main>
+
+    <footer class="footer__container">
+        <div class="footer__links">
+            <p>services</p>
+            <p>conditions</p>
+            <p>privacy policy</p>
+        </div>
+        <p class="footer__copy">2022 &copy; iCode | nahum casco</p>
+    </footer>
     <script src="/script.js"></script>
 </body>
 

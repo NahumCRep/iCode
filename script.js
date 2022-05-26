@@ -6,6 +6,7 @@ const navMenu = document.getElementById('navmenu')
 // open nav menu on mobile
 burguerBtn.addEventListener('click', () => {
     navMenu.classList.toggle('navbar__menu_open')
+    burguerBtn.classList.toggle('burguer_active')
 })
 
 // navbar box shadow when scroll
