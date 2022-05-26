@@ -199,7 +199,7 @@ main {
     background-color: var(--fourthColor);
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 2rem;
     padding: 3rem 0;
     border-top: 10px dashed var(--primaryColor);
     border-bottom: 10px dashed var(--primaryColor);
@@ -220,6 +220,7 @@ main {
 .about__info p {
     font-family: var(--secondaryFont);
     text-align: justify;
+    margin-top: 10px;
 }
 
 .about__video_container {
@@ -245,7 +246,6 @@ main {
     margin-top: 6rem;
     width: 100%;
     height: 500px;
-    /* background-color: aqua; */
     padding: 0 2rem;
 }
 
@@ -264,9 +264,9 @@ main {
 
 .courses__slider_container {
     width: 100%;
-    height: 250px;
+    height: auto;
     margin-top: 2rem;
-    position: relative
+    position: relative;
 }
 
 .courses__slider {
@@ -278,7 +278,6 @@ main {
     overflow-x: scroll;
     scrollbar-width: none;
     scroll-behavior: smooth;
-    /* background-color: var(--fourthColor); */
 }
 
 .courses__slider::-webkit-scrollbar {
@@ -286,9 +285,9 @@ main {
 }
 
 .course__card {
-    width: 250px;
-    min-width: 250px;
-    height: 80%;
+    width: 280px;
+    min-width: 280px;
+    height: 200px;
     background-color: var(--secondaryColor);
     border: 4px solid var(--secondaryColor);
 }
@@ -321,14 +320,213 @@ main {
     font-weight: normal;
 }
 
-.slider__btns{
+.slider__btns {
     display: none;
+}
+
+.courses__btn {
+    outline: none;
+    border: none;
+    width: auto;
+    height: 50px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    float: right;
+    margin-top: 20px;
+    background-color: var(--thirdColor);
+    font-family: var(--secondaryFont);
+    font-size: 1rem;
+    color: var(--primaryColor);
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.courses__btn i {
+    width: 30px;
+    height: 30px;
 }
 
 /* -->>> END SECTION COURSES */
 /* ---------------------------- */
 /* ---------------------------- */
 
+/* ---------------------------- */
+/* ---------------------------- */
+/* -->>> SECTION PRICING */
+
+.pricing__section {
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+.pricing__title {
+    font-family: var(--primaryFont);
+    font-size: 2.3rem;
+}
+
+.pricing__plans_container {
+    width: 100%;
+    height: auto;
+    margin-top: 2rem;
+    padding: 1rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
+    justify-content: center;
+    gap: 2rem;
+}
+
+.pricing__card {
+    width: 100%;
+    height: 450px;
+    background-color: var(--primaryColor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    box-shadow: 2px 2px 10px var(--secondaryColor);
+}
+
+.pricing_card_title {
+    font-family: var(--primaryFont);
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+
+}
+
+.plan__free {
+    color: #6ECB63;
+}
+
+.plan__professional {
+    color: #0AA1DD;
+}
+
+.plan__premium {
+    color: #F0A500;
+}
+
+.pricing__card small {
+    color: #A7C4BC;
+    font-size: 1rem;
+}
+
+.plan__free_price {
+    font-family: var(--secondaryFont);
+    font-size: 3.3rem;
+}
+
+.plan__characteristics_div {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.characteristics__list {
+    font-family: var(--secondaryFont);
+    list-style: none;
+}
+
+.characteristics__list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 7px;
+    color: var(--secondaryColor);
+}
+
+.characteristics__list li i {
+    padding-top: 3px;
+}
+
+.characteristic__green {
+    color: #6ECB63;
+}
+
+.characteristic__red {
+    color: #F05454;
+}
+
+.pricing__card_button {
+    width: 100%;
+    height: 60px;
+    margin-top: 20px;
+    background-color: var(--thirdColor);
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    color: var(--primaryColor);
+    font-family: var(--secondaryFont);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* -->>> END SECTION PRICING */
+/* ---------------------------- */
+/* ---------------------------- */
+
+
+/* ---------------------------- */
+/* ---------------------------- */
+/* -->>> SECTION JOIN */
+
+.section__join {
+    width: 100%;
+    height: auto;
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0 2rem;
+}
+
+.join__info {
+    width: 100%;
+    height: auto;
+    font-family: var(--primaryFont);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-collapse: collapse;
+    overflow: hidden;
+    position: relative;
+    outline: none;
+    /* background-color: var(--thirdColor); */
+}
+
+.join__info img{
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+
+.join__info h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    /* color: var(--primaryColor); */
+    letter-spacing: 2px;
+}
+
+.join__info h3 {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    /* color: var(--primaryColor); */
+    letter-spacing: 2px;
+}
+
+
+.join__form_container {
+    width: 100%;
+    height: 300px;
+    background-color: var(--fourthColor);
+}
+
+/* -->>> END SECTION JOIN */
+/* ---------------------------- */
+/* ---------------------------- */
 
 @media screen and (min-width: 650px) {
 
@@ -340,8 +538,6 @@ main {
     /* -->>> NAVBAR */
     .navbar {
         padding: 0 5rem;
-        /* border-bottom: 5px solid var(--thirdColor); */
-        /* box-shadow: 0 1px 50px var(--secondaryColor); */
     }
 
     .navbar__links_container {
@@ -448,7 +644,6 @@ main {
         flex-direction: row;
         height: 500px;
         padding: 0;
-        /* flex-wrap: wrap; */
     }
 
     .about__info {
@@ -466,10 +661,6 @@ main {
         transform: skew(-20deg) translateX(100px);
     }
 
-    .video__element {
-        /* transform: skew(-15deg) translateX(100px); */
-    }
-
     /* -->>> SECTION ABOUT */
     /* ---------------------------- */
 
@@ -478,21 +669,26 @@ main {
 
     .section__courses {
         padding: 0 5rem;
+        height: 600px;
     }
 
-    .course__card_figure{
+    .courses__slider {
+        height: 90%;
+    }
+
+    .course__card_figure {
         overflow: hidden;
     }
 
-    .course__card_figure img{
+    .course__card_figure img {
         transition: all 0.5s ease-in-out;
     }
 
-    .course__card{
+    .course__card {
         cursor: pointer;
     }
 
-    .course__card:hover > .course__card_figure img{
+    .course__card:hover>.course__card_figure img {
         transform: scale(1.2);
     }
 
@@ -505,43 +701,118 @@ main {
     }
 
     .course__card {
-        width: 350px;
-        min-width: 350px;
-        height: 90%;
+        width: 380px;
+        min-width: 380px;
+        height: 250px;
         background-color: var(--secondaryColor);
         border: 4px solid var(--secondaryColor);
     }
-    
-    .slider__btns{
+
+    .slider__btns {
+        height: auto;
         display: block;
         display: flex;
         justify-content: space-between;
         align-items: center;
         background-color: var(--fourthColor);
+        margin-top: 20px;
     }
 
-    #sliderLeft, #sliderRight{
+    #sliderLeft,
+    #sliderRight {
         width: 40px;
         height: 40px;
         outline: none;
         border: none;
         cursor: pointer;
         background-color: var(--secondaryColor);
-        color: var(--primaryColor);     
+        color: var(--primaryColor);
     }
 
-    #sliderLeft > i, #sliderRight > i {
+    #sliderLeft>i,
+    #sliderRight>i {
         transition: all 0.5s ease-in-out;
     }
 
-    #sliderLeft:hover > i{
+    #sliderLeft:hover>i {
         transform: translateX(-5px);
     }
-    #sliderRight:hover > i{
+
+    #sliderRight:hover>i {
         transform: translateX(5px);
     }
 
+    .courses__btn {
+        height: 60px;
+    }
+
     /* -->>> END SECTION COURSES */
+    /* ---------------------------- */
+
+    /* ---------------------------- */
+    /* -->>> SECTION PRICING */
+
+    .pricing__section {
+        padding: 2rem 5rem;
+    }
+
+    .pricing__title {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .pricing__card_button:hover {
+        transition: all 0.5s ease-in-out;
+        animation: bounce 1s linear infinite;
+    }
+
+    @keyframes bounce {
+        0% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(5px);
+        }
+
+        100% {
+            transform: translate(0);
+        }
+    }
+
+    /* -->>> END SECTION COURSES */
+    /* ---------------------------- */
+
+    /* ---------------------------- */
+    /* -->>> SECTION JOIN */
+
+    .section__join {
+        flex-direction: row;
+    }
+
+    .join__info img{
+        height: 400px;
+    }
+
+    .join__info h1 {
+        letter-spacing: 2px;
+    }
+
+    .join__info h3 {
+        letter-spacing: 2px;
+    }
+
+    .join__info {
+        width: 50%;
+        height: 100%;
+    }
+
+    .join__form_container {
+        width: 50%;
+        height: 100%;
+    }
+
+    /* -->>> END SECTION JOIN */
     /* ---------------------------- */
 
 }
